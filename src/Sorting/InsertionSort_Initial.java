@@ -1,6 +1,8 @@
+package Sorting;
+
 // Introduction to Algorithms 3rd edition, chapter 2.1
 // Initial attempt at the insertion sort algorithm before reading pseudocode
-class InsertionSort_Initial extends SortingAlgorithm {
+public class InsertionSort_Initial extends SortingAlgorithm {
   protected void sort(int[] arr) {
     // An array of length 0 or 1 is already sorted
     if (arr.length <= 1) return;
