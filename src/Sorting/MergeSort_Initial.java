@@ -2,6 +2,8 @@ package Sorting;
 
 import java.util.Arrays;
 
+// Introduction to Algorithms 3rd edition, chapter 2.3.1
+// Initial attempt at the merge sort algorithm before reading pseudocode
 public class MergeSort_Initial extends SortingAlgorithm {
     protected void sort(int[] arr) {
         // we want to mutate the input but it's easier to return arrays in recursive sort
@@ -42,6 +44,7 @@ public class MergeSort_Initial extends SortingAlgorithm {
             if (value1 < value2) {
                 mergedArr[i] = value1;
                 index1++;
+                // if we hit the end, set value to a number that will always be bigger
                 if (index1 == sorted1.length) {
                     value1 = Integer.MAX_VALUE;
                 } else {
@@ -50,6 +53,7 @@ public class MergeSort_Initial extends SortingAlgorithm {
             } else {
                 mergedArr[i] = value2;
                 index2++;
+                // if we hit the end, set value to a number that will always be bigger
                 if (index2 == sorted2.length) {
                     value2 = Integer.MAX_VALUE;
                 } else {
