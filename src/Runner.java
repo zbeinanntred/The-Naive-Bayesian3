@@ -1,7 +1,4 @@
-import Sorting.InsertionSort_Descending;
-import Sorting.InsertionSort_Initial;
-import Sorting.InsertionSort_Main;
-import Sorting.MergeSort_Initial;
+import Sorting.*;
 
 public class Runner {
   public static void main(String[] args) {
@@ -9,5 +6,6 @@ public class Runner {
 //    (new InsertionSort_Main()).run();
 //    (new InsertionSort_Descending()).run();
     (new MergeSort_Initial()).run();
+    (new MergeSort_Main()).run();
   }
 }
